@@ -9,19 +9,27 @@
 /* Begin PBXBuildFile section */
 		240532FA2BE67C5700562314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240532F92BE67C5700562314 /* AppDelegate.swift */; };
 		240532FC2BE67C5700562314 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240532FB2BE67C5700562314 /* SceneDelegate.swift */; };
-		240532FE2BE67C5700562314 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240532FD2BE67C5700562314 /* ViewController.swift */; };
+		240532FE2BE67C5700562314 /* TechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240532FD2BE67C5700562314 /* TechViewController.swift */; };
 		240533032BE67C5800562314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 240533022BE67C5800562314 /* Assets.xcassets */; };
 		240533062BE67C5800562314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 240533042BE67C5800562314 /* LaunchScreen.storyboard */; };
+		247192822BE9A1400073DF23 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247192812BE9A1400073DF23 /* CustomTabBarController.swift */; };
+		247192842BE9A70D0073DF23 /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247192832BE9A70D0073DF23 /* MediaViewController.swift */; };
+		247192862BE9A7240073DF23 /* BusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247192852BE9A7240073DF23 /* BusinessViewController.swift */; };
+		247192882BE9A73E0073DF23 /* EnergyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247192872BE9A73E0073DF23 /* EnergyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		240532F62BE67C5700562314 /* NewsApp-api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NewsApp-api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		240532F92BE67C5700562314 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		240532FB2BE67C5700562314 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		240532FD2BE67C5700562314 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		240532FD2BE67C5700562314 /* TechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechViewController.swift; sourceTree = "<group>"; };
 		240533022BE67C5800562314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		240533052BE67C5800562314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		240533072BE67C5800562314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		247192812BE9A1400073DF23 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		247192832BE9A70D0073DF23 /* MediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
+		247192852BE9A7240073DF23 /* BusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessViewController.swift; sourceTree = "<group>"; };
+		247192872BE9A73E0073DF23 /* EnergyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		240532F82BE67C5700562314 /* NewsApp-api */ = {
 			isa = PBXGroup;
 			children = (
-				240532F92BE67C5700562314 /* AppDelegate.swift */,
-				240532FB2BE67C5700562314 /* SceneDelegate.swift */,
-				240532FD2BE67C5700562314 /* ViewController.swift */,
-				240533022BE67C5800562314 /* Assets.xcassets */,
-				240533042BE67C5800562314 /* LaunchScreen.storyboard */,
 				240533072BE67C5800562314 /* Info.plist */,
+				2471928A2BE9A7DB0073DF23 /* App */,
+				2471928B2BE9A7FD0073DF23 /* Resources */,
+				247192892BE9A7540073DF23 /* Controllers */,
 			);
 			path = "NewsApp-api";
+			sourceTree = "<group>";
+		};
+		247192892BE9A7540073DF23 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				247192812BE9A1400073DF23 /* CustomTabBarController.swift */,
+				240532FD2BE67C5700562314 /* TechViewController.swift */,
+				247192832BE9A70D0073DF23 /* MediaViewController.swift */,
+				247192852BE9A7240073DF23 /* BusinessViewController.swift */,
+				247192872BE9A73E0073DF23 /* EnergyViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2471928A2BE9A7DB0073DF23 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				240532F92BE67C5700562314 /* AppDelegate.swift */,
+				240532FB2BE67C5700562314 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2471928B2BE9A7FD0073DF23 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				240533042BE67C5800562314 /* LaunchScreen.storyboard */,
+				240533022BE67C5800562314 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				240532FE2BE67C5700562314 /* ViewController.swift in Sources */,
+				247192862BE9A7240073DF23 /* BusinessViewController.swift in Sources */,
+				240532FE2BE67C5700562314 /* TechViewController.swift in Sources */,
+				247192842BE9A70D0073DF23 /* MediaViewController.swift in Sources */,
 				240532FA2BE67C5700562314 /* AppDelegate.swift in Sources */,
+				247192822BE9A1400073DF23 /* CustomTabBarController.swift in Sources */,
+				247192882BE9A73E0073DF23 /* EnergyViewController.swift in Sources */,
 				240532FC2BE67C5700562314 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,7 +15,7 @@ class OpinionViewController: UIViewController {
 		super.viewDidLoad()
 		displayManager.setupTableView(in: view)
 		displayManager.didSelectArticle = { [weak self] article in
-			self?.displayManager.handleArticleSelection(article)
+			self?.displayManager.handleArticleSelection(article, navigationController: self?.navigationController)
 		}
 		displayManager.fetchData(for: "opinion")
 	}

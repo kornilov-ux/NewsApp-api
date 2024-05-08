@@ -16,6 +16,7 @@
 		244D78B92BEA662C0006A1D0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D78B82BEA662C0006A1D0 /* NetworkManager.swift */; };
 		244D78BB2BEAA7A70006A1D0 /* ArticleDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D78BA2BEAA7A70006A1D0 /* ArticleDisplayManager.swift */; };
 		244D78C12BEADD040006A1D0 /* FullArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D78C02BEADD040006A1D0 /* FullArticleViewController.swift */; };
+		244D78C42BEAF1F50006A1D0 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 244D78C32BEAF1F50006A1D0 /* SwiftSoup */; };
 		247192822BE9A1400073DF23 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247192812BE9A1400073DF23 /* CustomTabBarController.swift */; };
 		247192842BE9A70D0073DF23 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247192832BE9A70D0073DF23 /* MoviesViewController.swift */; };
 		247192862BE9A7240073DF23 /* BusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247192852BE9A7240073DF23 /* BusinessViewController.swift */; };
@@ -45,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				244D78C42BEAF1F50006A1D0 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +154,9 @@
 			dependencies = (
 			);
 			name = "NewsApp-api";
+			packageProductDependencies = (
+				244D78C32BEAF1F50006A1D0 /* SwiftSoup */,
+			);
 			productName = "NewsApp-api";
 			productReference = 240532F62BE67C5700562314 /* NewsApp-api.app */;
 			productType = "com.apple.product-type.application";
@@ -180,6 +185,9 @@
 				Base,
 			);
 			mainGroup = 240532ED2BE67C5600562314;
+			packageReferences = (
+				244D78C22BEAF1F50006A1D0 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = 240532F72BE67C5700562314 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -429,6 +437,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		244D78C22BEAF1F50006A1D0 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		244D78C32BEAF1F50006A1D0 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 244D78C22BEAF1F50006A1D0 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 240532EE2BE67C5600562314 /* Project object */;
 }

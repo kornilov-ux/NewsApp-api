@@ -11,7 +11,6 @@ import Foundation
 class NetworkManager {
 	
 	private let apiKey = "VYUYbhxHjDci4CBacCp1syVUKILNEOSI"
-	//let shared = NetworkManager()
 	
 	func fetchData(for section: String, completion: @escaping (Result<[ArticleModel], Error>) -> Void) {
 		guard let url = URL(string: "https://api.nytimes.com/svc/news/v3/content/nyt/\(section).json?api-key=\(apiKey)") else {

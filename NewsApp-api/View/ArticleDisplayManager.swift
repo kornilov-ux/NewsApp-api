@@ -48,10 +48,13 @@ class ArticleDisplayManager: NSObject, UITableViewDataSource, UITableViewDelegat
 		self.tableView = tableView
 	}
 	
-	func handleArticleSelection(_ article: ArticleModel) {
+	func handleArticleSelection(_ article: ArticleModel, navigationController: UINavigationController?) {
 		print("Selected article: \(article.title)")
-		// Here you can implement further actions upon selecting an article
+		let fullArticleVC = FullArticleViewController()
+		fullArticleVC.article = article // Передаем выбранную статью в FullArticleViewController
+		navigationController?.pushViewController(fullArticleVC, animated: true)
 	}
+
 	
 	// MARK: - Fetching Data
 	
@@ -132,6 +135,7 @@ class ArticleCell: UITableViewCell {
 		abstractLabel.translatesAutoresizingMaskIntoConstraints = false
 		dateLabel.translatesAutoresizingMaskIntoConstraints = false
 		thumbnailImageView.translatesAutoresizingMaskIntoConstraints = false
+		//thumbnailImageView.contentMode = .scaleAspectFit
 
 		
 		NSLayoutConstraint.activate([
@@ -161,4 +165,3 @@ class ArticleCell: UITableViewCell {
 		dateLabel.textColor = UIColor.gray
 	}
 }
-
